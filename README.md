@@ -19,13 +19,13 @@ SessionTotalTime : 01:15:34
 
 ## Design idea
 
-Main Page: ![android-main.png](Front-end\mockup\img\android-main.png)
+Main Page: ![android-main.png](./Front-end/mockup/img/android-main.png)
 
-Log Page:  ![android-logScreen.png](Front-end\mockup\img\android-logScreen.png)
+Log Page:  ![android-logScreen.png](./Front-end/mockup/img/android-logScreen.png)
 
-Export Page: ![android-export.png](Front-end\mockup\img\android-export.png)
+Export Page: ![android-export.png](./Front-end/mockup/img/android-export.png)
 
-Settings Page: ![android-settings.png](Front-end\mockup\img\andriod-settings.png)
+Settings Page: ![android-settings.png](./Front-end/mockup/img/andriod-settings.png)
 
 
 
