@@ -8,7 +8,7 @@ const DATA = {
 }
 
 function Timer({ interval }) {
-  return <Text styles={styles.timer}>{ interval }</Text>
+  return <Text style={styles.timer}>{ interval }</Text>
 }
 
 export default class App extends Component {
@@ -26,11 +26,11 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#353542',
     alignItems: 'center',
-    justifyContent: 'center',
+    paddingTop: 130,
   },
   timer: {
-    color: '#fff',
+    color: '#FFFFFF',
     fontSize: 64,
-    fontWeight: '200'
-  }
+    fontWeight: '200',
+  },
 });
