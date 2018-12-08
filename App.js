@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import moment from 'moment';
+
+import Timer from './Front-end/src/components/timer/timer'
 
 
 const DATA = {
   timer: 1234567,
   log: [ 1234, 2345, 3456, 4567]
-}
-
-function Timer({ interval }) {
-  return <Text style={styles.timer}>{ interval }</Text>
 }
 
 export default class App extends Component {
@@ -27,10 +26,5 @@ const styles = StyleSheet.create({
     backgroundColor: '#353542',
     alignItems: 'center',
     paddingTop: 130,
-  },
-  timer: {
-    color: '#FFFFFF',
-    fontSize: 64,
-    fontWeight: '200',
   },
 });
