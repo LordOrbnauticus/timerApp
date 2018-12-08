@@ -1,11 +1,21 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-export default class App extends React.Component {
+
+const DATA = {
+  timer: 1234567,
+  log: [ 1234, 2345, 3456, 4567]
+}
+
+function Timer({ interval }) {
+  return <Text styles={styles.timer}>{ interval }</Text>
+}
+
+export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
+        <Timer interval={DATA.timer}/>
       </View>
     );
   }
@@ -14,8 +24,13 @@ export default class App extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#353542',
     alignItems: 'center',
     justifyContent: 'center',
   },
+  timer: {
+    color: '#fff',
+    fontSize: 64,
+    fontWeight: '200'
+  }
 });
