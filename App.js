@@ -27,5 +27,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#353542',
     alignItems: 'center',
     paddingTop: 130,
+    fontFamily: 'Roboto'
   },
 });

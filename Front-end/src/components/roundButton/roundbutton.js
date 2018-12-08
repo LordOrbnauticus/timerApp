@@ -4,7 +4,9 @@ import { StyleSheet, Text, View } from 'react-native';
 const RoundButton = ({ title, color, background }) => {
     return (
         <View style={[ styles.button, { backgroundColor: background }]}>
-            <Text style={[ styles.buttonTitle, { color }]}>{ title }</Text>
+            <View style={ styles.buttonBorder }>
+                <Text style={[ styles.buttonTitle, { color }]}>{ title }</Text>
+            </View>
         </View>
     )
 } 
@@ -19,6 +21,14 @@ const styles = StyleSheet.create({
     },
     buttonTitle: {
         fontSize: 12,
+    },
+    buttonBorder: {
+        width: 55,
+        height: 55,
+        borderRadius: 35,
+        borderWidth: 2,
+        justifyContent: 'center',
+        alignItems: 'center',
     },
 });
 
