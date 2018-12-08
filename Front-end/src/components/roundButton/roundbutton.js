@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-const RoundButton = ({ text, color, background }) => {
+const RoundButton = ({ title, color, background }) => {
     return (
         <View style={[ styles.button, { backgroundColor: background }]}>
             <Text style={[ styles.buttonTitle, { color }]}>{ title }</Text>
