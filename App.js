@@ -24,7 +24,7 @@ export default class App extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#353542',
+    backgroundColor: '#FFFFFF',
     alignItems: 'center',
     paddingTop: 130,
     fontFamily: 'Roboto'
