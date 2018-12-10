@@ -35,13 +35,14 @@ export default class App extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    paddingHorizontal: 20,
     backgroundColor: '#353542',
     alignItems: 'center',
     paddingTop: 130,
     fontFamily: 'Roboto'
   },
   buttonRow: {
-    padding: 50,
+    marginTop: 80,
     flexDirection: 'row',
     alignSelf: 'stretch',
     justifyContent: 'space-between'
