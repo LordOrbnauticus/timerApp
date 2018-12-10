@@ -10,12 +10,23 @@ const DATA = {
   log: [ 1234, 2345, 3456, 4567]
 }
 
+const AlignButtons = ({ children }) => {
+  return (
+    <View style={styles.buttonRow}>
+      { children }
+    </View>
+  )
+}
+
 export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
         <Timer interval={DATA.timer}/>
-        <RoundButton title='Record' color='#FF0000' background='#E6B2B2'/>
+        <AlignButtons>
+          <RoundButton title='Log' color='black' background='#A9BDBF' />
+          <RoundButton title='Record' color='#FF0000' background='#E6B2B2'/>
+        </AlignButtons>
       </View>
     );
   }
@@ -24,9 +35,15 @@ export default class App extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#FFFFFF',
+    backgroundColor: '#353542',
     alignItems: 'center',
     paddingTop: 130,
     fontFamily: 'Roboto'
+  },
+  buttonRow: {
+    padding: 50,
+    flexDirection: 'row',
+    alignSelf: 'stretch',
+    justifyContent: 'space-between'
   },
 });

@@ -14,7 +14,7 @@ const Timer = ({ interval }) => {
 
 const styles = StyleSheet.create({
     timer: {
-        color: 'black',
+        color: '#F9FFF6',
         fontSize: 64,
         fontWeight: '200',
       },
