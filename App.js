@@ -8,7 +8,7 @@ import LogTable from './Front-end/src/components/logTable/logTable'
 
 const DATA = {
   timer: 1234567,
-  log: [ 1234, 2345, 3456, 4567]
+  log: [ 1234, 2345, 3456, 4567, 5678, 6789, 7890]
 }
 
 const AlignButtons = ({ children }) => {
@@ -47,6 +47,7 @@ const styles = StyleSheet.create({
     marginTop: 80,
     flexDirection: 'row',
     alignSelf: 'stretch',
-    justifyContent: 'space-between'
+    justifyContent: 'space-between',
+    marginBottom: 30
   },
 });

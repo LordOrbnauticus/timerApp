@@ -13,9 +13,16 @@ const Log = ({ number, duration }) => {
 export default Log
 
 const styles = StyleSheet.create({
-    log: {},
+    log: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        borderColor: '#353542',
+        borderTopWidth: 1,
+        paddingVertical: 10
+    },
     logText: {
-        color: '#F9FFF6'
+        color: '#F9FFF6',
+        fontSize: 18,
     },
 })
 

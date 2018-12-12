@@ -5,7 +5,7 @@ import Log from '../timeLog/timeLog'
 
 const LogTable = ({ logs }) => {
     return (
-        <ScrollView>
+        <ScrollView style={styles.scrollview}>
             {logs.map((log, index) => (
                 <Log key={index} number={index} duration={log}/>
             ))}
@@ -14,3 +14,9 @@ const LogTable = ({ logs }) => {
 }
 
 export default LogTable;
+
+const styles = StyleSheet.create({
+    scrollview: {
+        alignSelf: 'stretch'
+    },
+})
