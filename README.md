@@ -1,4 +1,4 @@
-# Drake's Studio Timer App... name under construction 😬
+# Session.Timer
 
 This app should:
 
