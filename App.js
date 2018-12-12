@@ -7,8 +7,8 @@ import LogTable from './Front-end/src/components/logTable/logTable'
 
 
 const DATA = {
-  timer: 1234567,
-  log: [ 1234, 2345, 3456, 4567, 5678, 6789, 7890]
+  timer: 12345678910,
+  log: [ 12345678, 23456789, 34567890]
 }
 
 const AlignButtons = ({ children }) => {
@@ -23,7 +23,7 @@ export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Timer interval={DATA.timer}/>
+        <Timer interval={DATA.timer} style={styles.timerStyles}/>
         <AlignButtons>
           <RoundButton title='Log' color='black' background='#A9BDBF' />
           <RoundButton title='Record' color='#FF0000' background='#E6B2B2'/>
@@ -50,4 +50,9 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     marginBottom: 30
   },
+  timerStyles: {
+        color: '#F9FFF6',
+        fontSize: 64,
+        fontWeight: '200',
+      },
 });

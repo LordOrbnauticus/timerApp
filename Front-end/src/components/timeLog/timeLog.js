@@ -1,11 +1,13 @@
 import React from 'react';
 import { StyleSheet, View, Text } from 'react-native';
 
+import Timer from '../timer/timer';
+
 const Log = ({ number, duration }) => {
     return (
         <View style={styles.log}>
             <Text style={styles.logText}> Log { number }</Text>
-            <Text style={styles.logText}>{ duration }</Text>
+            <Timer style={styles.timerStyles} interval={duration} />
         </View>
     )
 }
@@ -24,6 +26,10 @@ const styles = StyleSheet.create({
         color: '#F9FFF6',
         fontSize: 18,
     },
+    timerStyles: {
+        color: '#F9FFF6',
+        fontWeight: '200',
+    }
 })
 
 //needs to be moved to /logTable folder when we get back... 
