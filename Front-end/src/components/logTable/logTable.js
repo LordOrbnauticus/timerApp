@@ -7,8 +7,10 @@ const LogTable = ({ logs }) => {
     return (
         <ScrollView>
             {logs.map((log, index) => (
-                <Log number={index} duration={log}/>
+                <Log key={index} number={index} duration={log}/>
             ))}
         </ScrollView>
     );
 }
+
+export default LogTable;
