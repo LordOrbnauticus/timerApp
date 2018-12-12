@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { StyleSheet, View, Text, ScrollView } from 'react-native';
+import React from 'react';
+import { StyleSheet, ScrollView } from 'react-native';
 
 import Log from '../timeLog/timeLog'
 

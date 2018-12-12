@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 
 import Timer from './Front-end/src/components/timer/timer';
 import RoundButton from './Front-end/src/components/roundButton/roundbutton';
@@ -51,8 +51,8 @@ const styles = StyleSheet.create({
     marginBottom: 30
   },
   timerStyles: {
-        color: '#F9FFF6',
-        fontSize: 64,
-        fontWeight: '200',
-      },
+    color: '#F9FFF6',
+    fontSize: 64,
+    fontWeight: '200',
+  },
 });
