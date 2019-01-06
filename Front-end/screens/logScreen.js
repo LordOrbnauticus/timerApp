@@ -19,11 +19,11 @@ export default class LogScreen extends Component {
     return (
       <View style={styles.container}>
         <Timer interval={DATA.timer} style={styles.timerStyles} />
-        <AlignButtons>
-          <RoundButton title="Log" color="black" background="#A9BDBF" />
-          <RoundButton title="Record" color="#FF0000" background="#E6B2B2" />
-        </AlignButtons>
         <LogTable logs={DATA.log} />
+        <AlignButtons>
+          <RoundButton title="Log" color="#322F3C" background="#A9BDBF" borderColor="#322F3C" />
+          <RoundButton title="Record" color="#FF0000" background="#E6B2B2" borderColor="#FFFFFF" />
+        </AlignButtons>
       </View>
     );
   }
@@ -33,21 +33,22 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     paddingHorizontal: 20,
-    backgroundColor: "#353542",
+    backgroundColor: "#F9FFF6",
     alignItems: "center",
-    paddingTop: 130,
+    paddingTop: 80,
     fontFamily: "Roboto"
   },
   buttonRow: {
-    marginTop: 80,
+    marginTop: 50,
     flexDirection: "row",
     alignSelf: "stretch",
     justifyContent: "space-between",
     marginBottom: 30
   },
   timerStyles: {
-    color: "#F9FFF6",
+    color: "#322F3C",
     fontSize: 64,
-    fontWeight: "200"
+    fontWeight: "200",
+    paddingBottom: 50
   }
 });

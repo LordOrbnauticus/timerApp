@@ -1,20 +1,20 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-const RoundButton = ({ title, color, background }) => {
+const RoundButton = ({ title, color, background, borderColor }) => {
     return (
         <View style={[ styles.button, { backgroundColor: background }]}>
-            <View style={ styles.buttonBorder }>
+            <View style={[ styles.buttonBorder, { borderColor } ]}>
                 <Text style={[ styles.buttonTitle, { color }]}>{ title }</Text>
             </View>
         </View>
     )
-} 
+}
 
 const styles = StyleSheet.create({
     button: {
-        width: 60,
-        height: 60,
+        width: 80,
+        height: 80,
         borderRadius: 40,
         justifyContent: 'center',
         alignItems: 'center',
@@ -23,11 +23,10 @@ const styles = StyleSheet.create({
         fontSize: 12,
     },
     buttonBorder: {
-        width: 55,
-        height: 55,
+        width: 70,
+        height: 70,
         borderRadius: 35,
         borderWidth: 2,
-        borderColor: '#353542',
         justifyContent: 'center',
         alignItems: 'center',
     },

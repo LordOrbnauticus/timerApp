@@ -18,18 +18,18 @@ const styles = StyleSheet.create({
     log: {
         flexDirection: 'row',
         justifyContent: 'space-between',
-        borderColor: '#353542',
+        borderColor: '#F9FFF6',
         borderTopWidth: 1,
-        paddingVertical: 10
+        paddingVertical: 10,
     },
     logText: {
-        color: '#F9FFF6',
+        color: '#322F3C',
         fontSize: 18,
     },
     timerStyles: {
-        color: '#F9FFF6',
+        color: '#322F3C',
         fontWeight: '200',
     }
 })
 
-//needs to be moved to /logTable folder when we get back... 
+//needs to be moved to /logTable folder when we get back...
