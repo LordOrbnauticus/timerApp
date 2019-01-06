@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { StyleSheet, View } from "react-native";
-import { createStackNavigator } from "react-navigation";
 
 import Timer from "../src/logScreen/components/timer/timer";
 import RoundButton from "../src/logScreen/components/roundButton/roundbutton";
@@ -15,7 +14,7 @@ const AlignButtons = ({ children }) => {
   return <View style={styles.buttonRow}>{children}</View>;
 };
 
-export default class App extends Component {
+export default class LogScreen extends Component {
   render() {
     return (
       <View style={styles.container}>
